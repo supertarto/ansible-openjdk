@@ -1,2 +1,3 @@
 ---
-
+openjdk_jvm_path: "/usr/lib/jvm"
+openjdk_default_java_link: "{{ openjdk_jvm_path }}/default-java"
