@@ -1,4 +1,6 @@
 # Ansible OpenJDK
+[![Build Status](https://travis-ci.org/supertarto/ansible-openjdk.svg?branch=master)](https://travis-ci.org/supertarto/ansible-openjdk)
+
 Role to install and configure openjdk with ansible
 
 ## Requirements
