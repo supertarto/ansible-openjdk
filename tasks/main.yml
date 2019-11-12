@@ -4,17 +4,17 @@
 
 - name: Define OpenJDK packages.
   set_fact:
-    java_packages: "{{ __openjdk_packages | list }}"
+    openjdk_packages: "{{ __openjdk_packages | list }}"
   when: openjdk_packages is not defined
 
 - name: Define OpenJDK directory name.
   set_fact:
-    java_packages: "{{ __openjdk_dir_name | list }}"
+    openjdk_dir_name: "{{ __openjdk_dir_name | list }}"
   when: openjdk_dir_name is not defined
 
 - name: Define OpenJDK full path
   set_fact:
-    java_packages: "{{ __openjdk_java_full_path | list }}"
+    openjdk_java_full_path: "{{ __openjdk_java_full_path | list }}"
   when: openjdk_java_full_path is not defined
 
 - name: Install OpenJDK packages.
