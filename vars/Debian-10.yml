@@ -2,4 +2,4 @@
 __openjdk_packages:
   - openjdk-11-jdk
 __openjdk_dir_name: "java-11-openjdk-amd64"
-__openjdk_java_full_path: "{{ openjdk_jvm_path }}/{{ openjdk_dir }}"
+__openjdk_java_full_path: "{{ openjdk_jvm_path }}/{{ openjdk_dir_name }}"
