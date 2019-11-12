@@ -27,3 +27,4 @@
     path: "{{ openjdk_default_java_link }}"
     src: "{{ openjdk_java_full_path }}"
     state: link
+    force: true
