@@ -1,3 +1,4 @@
+---
 __openjdk_packages:
   - openjdk-11-jdk
 __openjdk_dir_name: "java-11-openjdk-amd64"
