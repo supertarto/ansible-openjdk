@@ -18,7 +18,7 @@
   when: openjdk_java_full_path is not defined
 
 - name: Install OpenJDK packages.
-  package:
+  apt:
     name: "{{ openjdk_packages }}"
     state: present
 
