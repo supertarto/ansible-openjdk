@@ -1,4 +1,9 @@
 ---
+- name: Update apt cache.
+  apt:
+    update_cache: true
+    cache_valid_time: 3600
+
 - name: Include OS specific variables.
   include_vars: "{{ ansible_distribution|title }}-{{ ansible_distribution_version.split('.')[0] }}.yml"
 
@@ -18,7 +23,7 @@
   when: openjdk_java_full_path is not defined
 
 - name: Install OpenJDK packages.
-  apt:
+  package:
     name: "{{ openjdk_packages }}"
     state: present
 
