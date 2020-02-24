@@ -7,7 +7,6 @@ Role to install and configure openjdk with ansible
 None
 
 ## Tested plateform
-* Debian 9 (Stretch)
 * Debian 10 (Buster)
 
 ## Role variables
