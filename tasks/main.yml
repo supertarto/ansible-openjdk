@@ -4,24 +4,6 @@
     update_cache: true
     cache_valid_time: 3600
 
-- name: Include OS specific variables.
-  include_vars: "{{ ansible_distribution|title }}-{{ ansible_distribution_version.split('.')[0] }}.yml"
-
-- name: Define OpenJDK packages.
-  set_fact:
-    openjdk_packages: "{{ __openjdk_packages | list }}"
-  when: openjdk_packages is not defined
-
-- name: Define OpenJDK directory name.
-  set_fact:
-    openjdk_dir_name: "{{ __openjdk_dir_name | list }}"
-  when: openjdk_dir_name is not defined
-
-- name: Define OpenJDK full path
-  set_fact:
-    openjdk_java_full_path: "{{ __openjdk_java_full_path | list }}"
-  when: openjdk_java_full_path is not defined
-
 - name: Install OpenJDK packages.
   package:
     name: "{{ openjdk_packages }}"

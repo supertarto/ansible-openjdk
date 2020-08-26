@@ -1,5 +1,0 @@
----
-__openjdk_packages:
-  - openjdk-8-jdk
-__openjdk_dir_name: "java-8-openjdk-amd64"
-__openjdk_java_full_path: "{{ openjdk_jvm_path }}/{{ openjdk_dir_name }}"

@@ -1,3 +1,8 @@
 ---
 openjdk_jvm_path: "/usr/lib/jvm"
 openjdk_default_java_link: "{{ openjdk_jvm_path }}/default-java"
+
+openjdk_packages:
+  - openjdk-11-jdk
+openjdk_dir_name: "java-11-openjdk-amd64"
+openjdk_java_full_path: "{{ openjdk_jvm_path }}/{{ openjdk_dir_name }}"
