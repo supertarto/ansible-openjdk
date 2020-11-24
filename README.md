@@ -1,5 +1,5 @@
 # Ansible OpenJDK
-[![Build Status](https://travis-ci.com/supertarto/ansible-openjdk.svg?branch=master)](https://travis-ci.com/supertarto/ansible-openjdk)
+[![CI](https://github.com/supertarto/ansible-openjdk/workflows/CI/badge.svg?event=push)](https://github.com/supertarto/ansible-openjdk/actions?query=workflow%3ACI)
 
 Role to install and configure openjdk with ansible
 
